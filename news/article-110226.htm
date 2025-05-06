@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnpaihang.github.io/news/article-110226.htm" />
+    <title>Pycharm运行Flask项目指定运行参数</title>
+        <meta name="description" content="某天使用Pycharm开发Flask项目时运行app.py时，没有按照预期的运行监听外网IP和打开开发模式，代码如下： from flaskimport Flask   app= Flask(__na" />
+        <link rel="icon" href="/assets/website/img/clash_nyanpasu/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费VPN排行推荐 订阅机场节点中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnpaihang.github.io/news/article-110226.htm" />
+    <meta property="og:site_name" content="免费VPN排行推荐 订阅机场节点中文网" />
+    <meta property="og:title" content="Pycharm运行Flask项目指定运行参数" />
+    <meta property="og:image" content="https://vpnpaihang.github.io/uploads/20240728/e42edbc9ae19d46c64c77a65486f18ac.webp" />
+        <meta property="og:release_date" content="2025-05-03T10:27:45" />
+    <meta property="og:updated_time" content="2025-05-03T10:27:45" />
+        <meta property="og:description" content="某天使用Pycharm开发Flask项目时运行app.py时，没有按照预期的运行监听外网IP和打开开发模式，代码如下： from flaskimport Flask   app= Flask(__na" />
+        
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,  user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Pycharm运行Flask项目指定运行参数">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- Favicon Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/venobox.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/plugin_theme_css.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/responsive.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- modernizr js -->
+    <script src="/assets/website/js/frontend/clash_nyanpasu/modernizr-2.8.3.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PTMF6Q2F14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PTMF6Q2F14');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <div class="em40_header_area_main">
+        <div class="tx_top2_relative">
+            <div class="all_header_abs">
+                <div class="techsold-main-menu one_page menu4 heading_style_4 witr_h_h6">
+                    <div class="techsold_nav_area transprent-menu scroll_fixed bdbar">
+                        <div class="container">
+                            <div class="row logo-left">
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12">
+                                    <div class="logo">
+                                                                                <a href="/">
+                                            免费VPN排行推荐                                        </a>
+                                                                            </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12">
+                                    <nav class="techsold_menu">
+                                        <ul class="sub-menu">
+                                                                                        <li><a href="/">首页</a></li>
+                                                                                        <li><a href="/free-nodes/">免费节点</a></li>
+                                                                                        <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                        <li><a href="/news/">新闻资讯</a></li>
+                                                                                        <li><a href="/client.htm">客户端</a></li>
+                                                                                    </ul>
+                                    </nav>
+                                    <!-- MAIN MENU -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile_logo_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mobilemenu_con">
+                        <div class="mobile_menu_logo text-center">
+                                                        <a href="/">
+                                Clash Nyanpasu
+                            </a>
+                                                    </div>
+                        <div class="mobile_menu_option">
+                            <div class="mobile_menu_o mobile_opicon">
+                                <i class="icofont-navigation-menu openclass"></i>
+                            </div>
+                            <div class="mobile_menu_inner mobile_p">
+                                <div class="mobile_menu_content">
+                                    <div class="mobile_menu_logo text-center">
+                                                                                <a href="/">
+                                            Clash Nyanpasu
+                                        </a>
+                                                                            </div>
+                                    <div class="menu_area mobile-menu">
+                                        <nav class="techsold_menu">
+                                            <ul class="sub-menu">
+                                                                                                <li><a href="/">首页</a></li>
+                                                                                                <li><a href="/free-nodes/">免费节点</a></li>
+                                                                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                                <li><a href="/news/">新闻资讯</a></li>
+                                                                                                <li><a href="/client.htm">客户端</a></li>
+                                                                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="mobile_menu_o mobile_cicon">
+                                        <i class="icofont-close closeclass"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile_overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Mobile Menu -->
+    <!-- breadcumb area -->
+    <div class="breadcumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 txtc  text-center ccase">
+                    <div class="brpt brptsize">
+                        <h1 class="brcrumb_title">Pycharm运行Flask项目指定运行参数</h1>
+                    </div>
+                    <div class="breadcumb-inner">
+                        <ul>
+                            <li><a href="/">首页</a></li>
+                            <li><a href="/news/">新闻资讯</a></li>
+                            <li>-<span class="current">正文</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End breadcumb area -->
+    <!-- about area -->
+    <div class="ts_about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      				  				  				<div id="content_views" class="markdown_views prism-tomorrow-night"> </h1> <p>某天使用Pycharm开发Flask项目时运行app.py时，没有按照预期的运行监听外网IP和打开开发模式，代码如下：</p> <pre><code class="prism language-python"><span class="token keyword">from</span> flask<span class="token keyword">import</span> Flask   app<span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>  @app<span class="token punctuation">.</span>route<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token keyword">def</span><span class="token function">hello_world</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token keyword">return</span><span class="token string">'Hello World'</span><span class="token keyword">if</span> __name__<span class="token operator">==</span><span class="token string">"__main__"</span><span class="token punctuation">:</span>     app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">"0.0.0.0"</span><span class="token punctuation">,</span>debug<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>port<span class="token operator">=</span><span class="token number">80</span><span class="token punctuation">)</span></code></pre> <p>运行结果：<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220904/80ef19d4dfea1c129c094a70046093dc.jpg" alt="Pycharm运行Flask项目指定运行参数"></p> </h1> <p>点击右上角的解释器按钮，点击<code>Edit Configurations</code>，勾选或输入所需参数<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220904/145fc984edbd418223ba4ea8836e0653.jpg" alt="Pycharm运行Flask项目指定运行参数">运行成功结果<br /><img decoding="async" src="http://img.555519.xyz/uploads3/20220904/86f5bf4b21cdc436be37b51ca5a75db3.jpg" alt="Pycharm运行Flask项目指定运行参数"><br /> 我的个人博客网站是：www.coderyyn.cn<br /> 上面会不定期分享有关爬虫、算法、环境搭建以及有趣的帖子<br /> 欢迎大家一起交流学习</p> <p>转载请注明</p> </div> 			                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-110223.htm">SpringBoot admin+Eureka+钉钉通知 实现微服务监控</a></p>
+                                        <p>下一个：<a href="/news/article-111066.htm">宠物店一年盈利多少合适（正常宠物店一年利润有多少）</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-87944.htm" title="河南省动物疫苗管理系统 河南省动物疫苗管理系统官网">河南省动物疫苗管理系统 河南省动物疫苗管理系统官网</a></li>
+                        <li class="py-2"><a href="/news/article-86487.htm" title="全国领养宠物（全国领养宠物平台）">全国领养宠物（全国领养宠物平台）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-5-2-free-node-subscribe.htm" title="免费VPN排行推荐 | 5月2日20.7M/S|免费Shadowrocket/V2ray/Clash/SSR免费节点订阅分享">免费VPN排行推荐 | 5月2日20.7M/S|免费Shadowrocket/V2ray/Clash/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-110223.htm" title="SpringBoot admin+Eureka+钉钉通知 实现微服务监控">SpringBoot admin+Eureka+钉钉通知 实现微服务监控</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-5-3-clash-v2ray-ss-ssr.htm" title="免费VPN排行推荐 | 5月3日21.6M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享">免费VPN排行推荐 | 5月3日21.6M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-87943.htm" title="狗狗领养协议模板图片下载（狗狗领养协议有法律效力吗）">狗狗领养协议模板图片下载（狗狗领养协议有法律效力吗）</a></li>
+                        <li class="py-2"><a href="/news/article-103578.htm" title="动物医院注册商标名称（动物医院招牌图片）">动物医院注册商标名称（动物医院招牌图片）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-5-1-node-share.htm" title="免费VPN排行推荐 | 5月1日22M/S|免费Clash/Shadowrocket/V2ray/SSR免费节点订阅分享">免费VPN排行推荐 | 5月1日22M/S|免费Clash/Shadowrocket/V2ray/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-99031.htm" title="宠物粮概念股票有哪些（宠物粮食的上市公司）">宠物粮概念股票有哪些（宠物粮食的上市公司）</a></li>
+                        <li class="py-2"><a href="/news/article-111070.htm" title="狗粮制造机多少钱（狗粮加工机多少钱）">狗粮制造机多少钱（狗粮加工机多少钱）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">84</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer area -->
+<div class="witrfm_area">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer_style_1">
+                    <div class="copy-right-text text-center">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p>
+                            免费VPN排行推荐 订阅机场节点中文网 版权所有
+                            <br />
+                            Powered by WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include All JS -->
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery-3.5.1.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/bootstrap.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/isotope.pkgd.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/slick.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/venobox.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.appear.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.knob.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/theme-pluginjs.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.meanmenu.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/ajax-mail.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/theme.js"></script>
+<script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://vpnpaihang.github.io/news/article-109382.htm" />
+    <title>vue项目打包时踩的坑</title>
+        <meta name="description" content="vue项目打包后页面出现空白页面 在config文件夹下index.js中： dev对象中的assetsPublicPath修改为’./’ build对象中的assetsPublicPath修改为’." />
+        <link rel="icon" href="/assets/website/img/clash_nyanpasu/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费VPN排行推荐 订阅机场节点中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnpaihang.github.io/news/article-109382.htm" />
+    <meta property="og:site_name" content="免费VPN排行推荐 订阅机场节点中文网" />
+    <meta property="og:title" content="vue项目打包时踩的坑" />
+    <meta property="og:image" content="https://vpnpaihang.github.io/uploads/20240728/7f25368974f287b37e866561310bd2bc.webp" />
+        <meta property="og:release_date" content="2025-05-02T09:22:01" />
+    <meta property="og:updated_time" content="2025-05-02T09:22:01" />
+        <meta property="og:description" content="vue项目打包后页面出现空白页面 在config文件夹下index.js中： dev对象中的assetsPublicPath修改为’./’ build对象中的assetsPublicPath修改为’." />
+        
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,  user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="vue项目打包时踩的坑">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- Favicon Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/venobox.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/plugin_theme_css.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/responsive.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- modernizr js -->
+    <script src="/assets/website/js/frontend/clash_nyanpasu/modernizr-2.8.3.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PTMF6Q2F14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PTMF6Q2F14');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <div class="em40_header_area_main">
+        <div class="tx_top2_relative">
+            <div class="all_header_abs">
+                <div class="techsold-main-menu one_page menu4 heading_style_4 witr_h_h6">
+                    <div class="techsold_nav_area transprent-menu scroll_fixed bdbar">
+                        <div class="container">
+                            <div class="row logo-left">
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12">
+                                    <div class="logo">
+                                                                                <a href="/">
+                                            免费VPN排行推荐                                        </a>
+                                                                            </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12">
+                                    <nav class="techsold_menu">
+                                        <ul class="sub-menu">
+                                                                                        <li><a href="/">首页</a></li>
+                                                                                        <li><a href="/free-nodes/">免费节点</a></li>
+                                                                                        <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                        <li><a href="/news/">新闻资讯</a></li>
+                                                                                        <li><a href="/client.htm">客户端</a></li>
+                                                                                    </ul>
+                                    </nav>
+                                    <!-- MAIN MENU -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile_logo_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mobilemenu_con">
+                        <div class="mobile_menu_logo text-center">
+                                                        <a href="/">
+                                Clash Nyanpasu
+                            </a>
+                                                    </div>
+                        <div class="mobile_menu_option">
+                            <div class="mobile_menu_o mobile_opicon">
+                                <i class="icofont-navigation-menu openclass"></i>
+                            </div>
+                            <div class="mobile_menu_inner mobile_p">
+                                <div class="mobile_menu_content">
+                                    <div class="mobile_menu_logo text-center">
+                                                                                <a href="/">
+                                            Clash Nyanpasu
+                                        </a>
+                                                                            </div>
+                                    <div class="menu_area mobile-menu">
+                                        <nav class="techsold_menu">
+                                            <ul class="sub-menu">
+                                                                                                <li><a href="/">首页</a></li>
+                                                                                                <li><a href="/free-nodes/">免费节点</a></li>
+                                                                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                                <li><a href="/news/">新闻资讯</a></li>
+                                                                                                <li><a href="/client.htm">客户端</a></li>
+                                                                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="mobile_menu_o mobile_cicon">
+                                        <i class="icofont-close closeclass"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile_overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Mobile Menu -->
+    <!-- breadcumb area -->
+    <div class="breadcumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 txtc  text-center ccase">
+                    <div class="brpt brptsize">
+                        <h1 class="brcrumb_title">vue项目打包时踩的坑</h1>
+                    </div>
+                    <div class="breadcumb-inner">
+                        <ul>
+                            <li><a href="/">首页</a></li>
+                            <li><a href="/news/">新闻资讯</a></li>
+                            <li>-<span class="current">正文</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End breadcumb area -->
+    <!-- about area -->
+    <div class="ts_about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Meta免费节点订阅站" data-url="https://clash-meta.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                      				  				  				<div id="content_views" class="markdown_views prism-atom-one-dark"> <ol> <li><strong>vue项目打包后页面出现空白页面</strong><br /> 在config文件夹下index.js中：<br /> dev对象中的assetsPublicPath修改为’./’<br /> build对象中的assetsPublicPath修改为’./’<br /> 在build文件中，webpack.prod.conf.js 第25行左右 有一个对象为 output,在这里面增加一行代码publicPath:’./’</li> </ol> <pre><code>output: {     //在这里加一行代码       publicPath:'./',     path: config.build.assetsRoot,     filename: utils.assetsPath('js/[name].[chunkhash].js'),     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')   },</code></pre> <p>在utils.js中， 第47行左右 有一个if判断为 if (options.extract),在这里面增加一行代码（是为了图片加载）publicPath:’…/…/’</p> <pre><code> if (options.extract) {       return ExtractTextPlugin.extract({         publicPath:'../../',         use: loaders,         fallback: 'vue-style-loader'       })     }</code></pre> <p>**注意：**如果修改完还是白页，看route.js的mode是不是history模式，history模式可以去掉#，但是需要后端设置配合使用。删除mode定义，使用默认模式即可。<br /> 2.<strong>vue项目打包时报错</strong><br /> 错误：Cannot read property ‘matched’ of undefined"<br /> 错误原因：在new Vue()的实例中对路由名称的识别是唯一的，所以路由定义需要修改为【router】</p> <pre><code>const router = new VueRouter({   routes: [     {       path: '/apple',       component: Apple     },     {       path: '/banana',       component: Banana     }   ] }) new Vue({   el: '#app',   router,   components: { App },   template: '&lt;App/&gt;' })</code></pre> <p><strong>3. vue项目打包后跨域请求报错</strong><br /> 开发环境：</p> <pre><code>// config文件夹下的index.js中dev中添加 proxyTable: {       //做一个接口的代理       '/pay_api': {   // 拦截转发路径，名字可以任意取，注意前面斜杠；         target: 'http://ip地址:端口',   //代理目标网址；         changeOrigin: true,   //允许跨域         pathRewrite: {           '^/pay_api': ''   //重写路径         }       }     }</code></pre> <pre><code>this.$axios.post('/pay_api/接口',{ 	fileName: fileName  // 请求参数 	}).then((data) =&gt; { 		//请求完成 	})</code></pre> <p>生产环境：（跨域由后端解决）</p> <pre><code>import axios from 'axios' Vue.prototype.$axios = axios; axios.defaults.baseURL = "http://ip地址:端口"</code></pre> <pre><code>this.$axios.post('接口',{ 	fileName: fileName  // 请求参数 	}).then((data) =&gt; { 		//请求完成 	})</code></pre> <pre><code>import org.springframework.context.annotation.Bean; import org.springframework.context.annotation.Configuration; import org.springframework.web.cors.CorsConfiguration; import org.springframework.web.cors.UrlBasedCorsConfigurationSource; import org.springframework.web.filter.CorsFilter;  @Configuration public class CorsConfig {     @Bean     public CorsFilter corsFilter() {         //1.添加CORS配置信息         CorsConfiguration config = new CorsConfiguration();         //1) 允许的域,不要写*，否则cookie就无法使用了         config.addAllowedOrigin("*");         //2) 是否发送Cookie信息         config.setAllowCredentials(true);         //3) 允许的请求方式GET POST等         config.addAllowedMethod("*");         // 4）允许的头信息         config.addAllowedHeader("*");         config.setMaxAge(3600L);          //2.添加映射路径，我们拦截一切请求         UrlBasedCorsConfigurationSource configSource = new UrlBasedCorsConfigurationSource();         configSource.registerCorsConfiguration("/**", config);          //3.返回新的CorsFilter.         return new CorsFilter(configSource);     } }</code></pre> </div> 			                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-108540.htm">公办动物医院（正规动物医院）</a></p>
+                                        <p>下一个：<a href="/news/article-109383.htm">宠物爱心救助站动物有狂犬病吗（宠物救助站有补助吗）</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2025-4-30-free-v2ray-subscribe.htm" title="免费VPN排行推荐 | 4月30日18.5M/S|免费SSR/V2ray/Shadowrocket/Clash免费节点订阅分享">免费VPN排行推荐 | 4月30日18.5M/S|免费SSR/V2ray/Shadowrocket/Clash免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-8-clash-v2ray-ss-ssr.htm" title="免费VPN排行推荐 | 4月8日19.4M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享">免费VPN排行推荐 | 4月8日19.4M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-86487.htm" title="全国领养宠物（全国领养宠物平台）">全国领养宠物（全国领养宠物平台）</a></li>
+                        <li class="py-2"><a href="/news/article-111066.htm" title="宠物店一年盈利多少合适（正常宠物店一年利润有多少）">宠物店一年盈利多少合适（正常宠物店一年利润有多少）</a></li>
+                        <li class="py-2"><a href="/news/article-99031.htm" title="宠物粮概念股票有哪些（宠物粮食的上市公司）">宠物粮概念股票有哪些（宠物粮食的上市公司）</a></li>
+                        <li class="py-2"><a href="/news/article-96875.htm" title="打的疫苗可以吃（打的疫苗可以吃感冒药吗）">打的疫苗可以吃（打的疫苗可以吃感冒药吗）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-4-19-free-v2ray-subscribe.htm" title="免费VPN排行推荐 | 4月19日18.8M/S|免费V2ray/Clash/Shadowrocket/SSR免费节点订阅分享">免费VPN排行推荐 | 4月19日18.8M/S|免费V2ray/Clash/Shadowrocket/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-102756.htm" title="24小时宠物医院附近（24小时宠物医院附近上海）">24小时宠物医院附近（24小时宠物医院附近上海）</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-5-6-free-subscribe-node.htm" title="免费VPN排行推荐 | 5月6日22.3M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享">免费VPN排行推荐 | 5月6日22.3M/S|免费Clash/SSR/V2ray/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/news/article-97579.htm" title="狗粮生产机器设备（鱼饲料生产加工设备）">狗粮生产机器设备（鱼饲料生产加工设备）</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">84</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer area -->
+<div class="witrfm_area">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer_style_1">
+                    <div class="copy-right-text text-center">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/free-nodes/">免费节点</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p>
+                            免费VPN排行推荐 订阅机场节点中文网 版权所有
+                            <br />
+                            Powered by WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include All JS -->
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery-3.5.1.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/bootstrap.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/isotope.pkgd.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/slick.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/venobox.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.appear.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.knob.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/theme-pluginjs.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.meanmenu.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/ajax-mail.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/theme.js"></script>
+<script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
