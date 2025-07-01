@@ -1,4 +1,4 @@
-# 免费VPN排行推荐 | 6月25日19M/S|免费V2ray/Clash/Shadowrocket/SSR免费节点订阅分享  更新时间 2025-06-25 08:53:17
+# 免费VPN排行推荐 | 7月1日20.8M/S|免费SSR/Clash/Shadowrocket/V2ray免费节点订阅分享  更新时间 2025-07-01 08:47:07
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://vpnpaihang.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://vpnpaihang.github.io/uploads/2025/06/0-20250625.yaml
-- https://vpnpaihang.github.io/uploads/2025/06/1-20250625.yaml
-- https://vpnpaihang.github.io/uploads/2025/06/2-20250625.yaml
-- https://vpnpaihang.github.io/uploads/2025/06/3-20250625.yaml
-- https://vpnpaihang.github.io/uploads/2025/06/4-20250625.yaml
+- https://vpnpaihang.github.io/uploads/2025/07/0-20250701.yaml
+- https://vpnpaihang.github.io/uploads/2025/07/1-20250701.yaml
+- https://vpnpaihang.github.io/uploads/2025/07/2-20250701.yaml
+- https://vpnpaihang.github.io/uploads/2025/07/3-20250701.yaml
+- https://vpnpaihang.github.io/uploads/2025/07/4-20250701.yaml
 
 ### V2ray订阅链接
 
-- https://vpnpaihang.github.io/uploads/2025/06/0-20250625.txt
-- https://vpnpaihang.github.io/uploads/2025/06/1-20250625.txt
-- https://vpnpaihang.github.io/uploads/2025/06/2-20250625.txt
-- https://vpnpaihang.github.io/uploads/2025/06/3-20250625.txt
-- https://vpnpaihang.github.io/uploads/2025/06/4-20250625.txt
+- https://vpnpaihang.github.io/uploads/2025/07/0-20250701.txt
+- https://vpnpaihang.github.io/uploads/2025/07/1-20250701.txt
+- https://vpnpaihang.github.io/uploads/2025/07/2-20250701.txt
+- https://vpnpaihang.github.io/uploads/2025/07/3-20250701.txt
+- https://vpnpaihang.github.io/uploads/2025/07/4-20250701.txt
 
 ### Sing-box订阅链接
 
-- https://vpnpaihang.github.io/uploads/2025/06/20250625.json
+- https://vpnpaihang.github.io/uploads/2025/07/20250701.json
 
 ## 更多clash节点订阅 ：
 
