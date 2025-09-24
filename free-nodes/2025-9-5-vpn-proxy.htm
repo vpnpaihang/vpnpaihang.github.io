@@ -72,7 +72,7 @@
                                 <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12">
                                     <div class="logo">
                                                                                 <a href="/">
-                                            免费VPN排行推荐                                        </a>
+                                            免费VPN排行精选                                        </a>
                                                                             </div>
                                 </div>
                                 <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12">
@@ -102,7 +102,7 @@
                     <div class="mobilemenu_con">
                         <div class="mobile_menu_logo text-center">
                                                         <a href="/">
-                                免费VPN排行推荐                            </a>
+                                免费VPN排行精选                            </a>
                                                     </div>
                         <div class="mobile_menu_option">
                             <div class="mobile_menu_o mobile_opicon">
@@ -112,7 +112,7 @@
                                 <div class="mobile_menu_content">
                                     <div class="mobile_menu_logo text-center">
                                                                                 <a href="/">
-                                            免费VPN排行推荐                                        </a>
+                                            免费VPN排行精选                                        </a>
                                                                             </div>
                                     <div class="menu_area mobile-menu">
                                         <nav class="techsold_menu">
@@ -144,7 +144,7 @@
             <div class="row">
                 <div class="col-md-12 txtc  text-center ccase">
                     <div class="brpt brptsize">
-                        <h1 class="brcrumb_title">免费VPN排行推荐 | 9月5日19.7M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享</h1>
+                        <h1 class="brcrumb_title">免费VPN排行推荐 | 9月5日19.7M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR免费节点订阅分享</h1>
                     </div>
                     <div class="breadcumb-inner">
                         <ul>
@@ -188,8 +188,8 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
 <p style="margin-bottom:3rem;color:#999;font-style:italic;">注：跳转链接可能会 <b style="color:red;">被墙</b> ，如多次打开失败，请先使用下面不稳定免费订阅后，再尝试点击链接</p><p>&nbsp;</p><p></p><h2>订阅文件链接</h2><p>&nbsp;</p><p><strong>Clash订阅链接</strong></p><p>https://vpnpaihang.github.io/uploads/2025/09/0-20250905.yaml</p><p>https://vpnpaihang.github.io/uploads/2025/09/1-20250905.yaml</p><p>https://vpnpaihang.github.io/uploads/2025/09/2-20250905.yaml</p><p>https://vpnpaihang.github.io/uploads/2025/09/3-20250905.yaml</p><p>https://vpnpaihang.github.io/uploads/2025/09/4-20250905.yaml</p><p>&nbsp;</p><p><strong>V2ray订阅链接:</strong></p><p>https://vpnpaihang.github.io/uploads/2025/09/0-20250905.txt</p><p>https://vpnpaihang.github.io/uploads/2025/09/1-20250905.txt</p><p><strong>Sing-Box订阅链接</strong></p><p>https://vpnpaihang.github.io/uploads/2025/09/20250905.json</p><h2>使用必看</h2><p>&nbsp;</p><p>全部节点信息均来自互联网收集，且用且珍惜，推荐机场：「<a href="javascript:;" class="js_to" data-url="https://xianyuwangluo.top/#/register?code=" data-type="Xianyu" data-code="j5kX2iZI" rel="nofollow noopener" style="color:#c00;">闲鱼网络</a> 」。仅针对用于学习研究的用户分享，请勿随意传播其他信息。免费节点有效时间比较短，遇到失效是正常现象。</p><h2>深度解析：V2Ray浏览器连接失败的十大原因与终极解决方案</h2>  <p>在当今互联网环境中，V2Ray凭借其模块化设计和强大的抗检测能力，已成为科学上网工具中的佼佼者。然而许多用户在配置过程中常遭遇一个令人沮丧的问题——明明服务端已正常启动，浏览器却始终无法通过代理访问网络。本文将系统性地剖析这一现象的深层原因，并提供经过实战验证的解决方案。  </p>  <h2>一、DNS解析：被忽视的关键环节</h2>  <p>当浏览器显示"无法连接此网站"时，超过40%的问题根源在于DNS污染。V2Ray虽然能转发流量，但若域名解析阶段就已失败，后续连接自然无从谈起。  </p>  <p><strong>典型症状</strong>：<br /> - 能Ping通IP却无法打开网页<br /> - 部分网站可访问而部分不可<br /> - 随机出现域名解析超时  </p>  <p><strong>进阶解决方案</strong>：<br /> 1. 在<code>config.json</code>中强制指定DoH服务器：<br /> <code>json "dns": {   "servers": [     "https://1.1.1.1/dns-query",     "https://dns.google/dns-query"   ] }</code><br /> 2. 使用FakeDNS功能混淆查询行为（需配合路由规则）<br /> 3. 在浏览器中安装"DNS-over-HTTPS"扩展实现双重保障  </p>  <h2>二、协议栈冲突：现代浏览器的安全机制</h2>  <p>最新版本的Chrome/Firefox引入了严格的网络安全策略，这与V2Ray的某些传输协议可能产生微妙冲突。  </p>  <p><strong>典型案例</strong>：<br /> - 使用WebSocket+TLS时浏览器控制台报CORS错误<br /> - QUIC协议下出现证书验证失败<br /> - HTTP/3支持不完整导致连接重置  </p>  <p><strong>协议优化方案</strong>：<br /> | 原配置 | 推荐替代方案 | 优势 |<br /> |--------|--------------|------|<br /> | 纯TCP | WebSocket+CDN | 规避QoS限速 |<br /> | mKCP | QUIC+0-RTT | 提升移动端体验 |<br /> | HTTP/2 | gRPC+伪装 | 突破深度包检测 |  </p>  <h2>三、配置陷阱：90%用户踩过的坑</h2>  <p>分析上千份故障报告后，我们发现这些配置错误最为常见：  </p>  <ol> <li><p><strong>时间不同步问题</strong>  </p>  <ul> <li>服务器与本地时差超过90秒会导致VMESS认证失败  </li> <li>解决方案：<br /> ```bash</li> </ul>  <h1>Linux系统  <p>timedatectl set-ntp true</p>  <h1>Windows  <p>w32tm /resync ```</p></li> <li><p><strong>UUID生成错误</strong>  </p>  <ul> <li>使用在线生成器可能产生不兼容的UUID格式  </li> <li>正确方法：<br /> <code>bash v2ctl uuid</code></li> </ul></li> <li><p><strong>端口冲突诊断技巧</strong><br /> ```powershell</p>  <h1>Windows查看端口占用  <p>netstat -ano | findstr "1080"</p>  <h1>Linux替代方案  <p>ss -tulnp | grep v2ray ```</p></li> </ol>  <h2>四、浏览器生态的隐形战争</h2>  <p>现代浏览器扩展生态可能在不经意间破坏代理连接：  </p>  <p><strong>高危扩展黑名单</strong>：<br /> - 广告拦截器（uBlock Origin例外）<br /> - "安全DNS"类扩展<br /> - 网页预加载加速器<br /> - 某些VPN配套插件  </p>  <p><strong>诊断方法</strong>：<br /> 1. 访问<code>chrome://net-export</code>记录网络日志<br /> 2. 使用<code>Fiddler Everywhere</code>分析流量走向<br /> 3. 对比隐身模式与普通模式的差异  </p>  <h2>五、网络环境的多维对抗</h2>  <p>在不同网络环境下需要采用针对性策略：  </p>  <p><strong>校园网/企业网</strong>：<br /> - 启用端口跳跃技术<br /> - 尝试443/80等常见HTTPS端口<br /> - 使用TLS+WebSocket组合  </p>  <p><strong>移动网络</strong>：<br /> - 开启mKCP的流量伪装<br /> - 调整<code>uplinkCapacity</code>和<code>downlinkCapacity</code><br /> - 启用Brutal拥塞控制算法  </p>  <p><strong>国际链路优化</strong>：<br /> <code>json "routing": {   "domainStrategy": "IPIfNonMatch",   "rules": [     {       "type": "field",       "outboundTag": "direct",       "domain": ["geosite:cn"]     }   ] }</code></p>  <h2>六、终极排查流程图</h2>  <p>当问题发生时，建议按此流程逐步排查：<br /> 1. 检查基础连通性（ping/curl测试）<br /> 2. 验证本地代理端口监听状态<br /> 3. 分析浏览器开发者工具网络面板<br /> 4. 对比不同协议/端口的连接差异<br /> 5. 审查V2Ray核心日志（<code>--configtest</code>参数）  </p>  <h2>技术点评：代理工具的演进哲学</h2>  <p>V2Ray与其他代理工具的本质区别在于其"协议不可知论"设计理念。通过将传输层、路由决策、加密方式等模块彻底解耦，它实现了前所未有的适应性。这种设计虽然带来了学习曲线，但也赋予了用户对抗网络封锁的终极武器。  </p>  <p>现代网络对抗已进入"微观战争"阶段，运营商不再简单封锁IP/端口，而是通过深度包检测、行为分析等手段进行精准打击。这就要求使用者必须理解：  </p>  <ul> <li>流量特征工程的重要性  </li> <li>协议栈选择的战略意义  </li> <li>客户端环境的一致性维护  </li> </ul>  <p>正如网络安全专家Bruce Schneier所言："加密不是魔法，而是精密工程。"V2Ray的每个配置参数都对应着特定的防御场景，只有深入理解这些技术细节，才能在日益复杂的网络环境中保持稳定访问。  </p>  <p>掌握这些技巧后，您不仅能解决当前的连接问题，更能建立起应对未来网络限制的前瞻性防御体系。记住，在这个领域，知识才是最好的VPN。</p>                 </div>
                 <div class="clearfix"></div>
                 <div class="col-md-12 mt-5">
-                                        <p>上一个：<a href="/free-nodes/2025-9-4-top-vpn-node.htm">免费VPN排行推荐 | 9月4日20.7M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点订阅分享</a></p>
-                                        <p>下一个：<a href="/free-nodes/2025-9-6-free-vpn-node.htm">免费VPN排行推荐 | 9月6日22.4M/S|免费Clash/SSR/Shadowrocket/V2ray免费节点订阅分享</a></p>
+                                        <p>上一个：<a href="/free-nodes/2025-9-4-top-vpn-node.htm">免费VPN排行推荐 | 9月4日20.7M/S|免费Shadowrocket节点/V2ray节点/SSR/Clash免费节点订阅分享</a></p>
+                                        <p>下一个：<a href="/free-nodes/2025-9-6-free-vpn-node.htm">免费VPN排行推荐 | 9月6日22.4M/S|免费Clash节点/SSR/Shadowrocket节点/V2ray免费节点订阅分享</a></p>
                                     </div>
                                 <div class="panel panel-default mt-5">
                     <div class="panel-heading">
@@ -197,16 +197,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
                     </div>
                     <div class="panel-body">
                         <ul class="p-0 x-0">
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-4-top-vpn-node.htm">免费VPN排行推荐 | 9月4日20.7M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-3-mianfei-vpn.htm">免费VPN排行推荐 | 9月3日20M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-9-1-top-vpn.htm">免费VPN排行推荐 | 9月1日20.9M/S|免费V2ray/Clash/SSR/Shadowrocket免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-31-top-vpn.htm">免费VPN排行推荐 | 8月31日22.1M/S|免费SSR/Clash/Shadowrocket/V2ray免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-30-node-share.htm">免费VPN排行推荐 | 8月30日22.1M/S|免费Shadowrocket/V2ray/Clash/SSR免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-29-node-share.htm">免费VPN排行推荐 | 8月29日20.2M/S|免费Shadowrocket/Clash/V2ray/SSR免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-28-vpn-free.htm">免费VPN排行推荐 | 8月28日22.4M/S|免费Clash/V2ray/SSR/Shadowrocket免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-27-top-vpn-node.htm">免费VPN排行推荐 | 8月27日19.5M/S|免费SSR/V2ray/Clash/Shadowrocket免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-26-share-vpn.htm">免费VPN排行推荐 | 8月26日20.7M/S|免费SSR/V2ray/Shadowrocket/Clash免费节点订阅分享</a></li>
-                                                        <li class="py-2"><a href="/free-nodes/2025-8-25-vpn-github.htm">免费VPN排行推荐 | 8月25日20.7M/S|免费SSR/Shadowrocket/Clash/V2ray免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-4-top-vpn-node.htm">免费VPN排行推荐 | 9月4日20.7M/S|免费Shadowrocket节点/V2ray节点/SSR/Clash免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-3-mianfei-vpn.htm">免费VPN排行推荐 | 9月3日20M/S|免费Shadowrocket节点/V2ray节点/SSR/Clash免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-9-1-top-vpn.htm">免费VPN排行推荐 | 9月1日20.9M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-31-top-vpn.htm">免费VPN排行推荐 | 8月31日22.1M/S|免费SSR/Clash节点/Shadowrocket节点/V2ray免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-30-node-share.htm">免费VPN排行推荐 | 8月30日22.1M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-29-node-share.htm">免费VPN排行推荐 | 8月29日20.2M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-28-vpn-free.htm">免费VPN排行推荐 | 8月28日22.4M/S|免费Clash节点/V2ray节点/SSR/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-27-top-vpn-node.htm">免费VPN排行推荐 | 8月27日19.5M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-26-share-vpn.htm">免费VPN排行推荐 | 8月26日20.7M/S|免费SSR/V2ray节点/Shadowrocket节点/Clash免费节点订阅分享</a></li>
+                                                        <li class="py-2"><a href="/free-nodes/2025-8-25-vpn-github.htm">免费VPN排行推荐 | 8月25日20.7M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray免费节点订阅分享</a></li>
                                                     </ul>
                     </div>
                 </div>
@@ -218,16 +218,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-9-8-mianfei-vpn.htm" title="免费VPN排行推荐 | 9月8日21.6M/S|免费SSR/V2ray/Clash/Shadowrocket免费节点订阅分享">免费VPN排行推荐 | 9月8日21.6M/S|免费SSR/V2ray/Clash/Shadowrocket免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-10-vpn-node.htm" title="VPN推荐 | 8月10日18.1M/S|免费Clash/Shadowrocket/SSR/V2ray免费节点地址">VPN推荐 | 8月10日18.1M/S|免费Clash/Shadowrocket/SSR/V2ray免费节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-9-6-free-vpn-node.htm" title="免费VPN排行推荐 | 9月6日22.4M/S|免费Clash/SSR/Shadowrocket/V2ray免费节点订阅分享">免费VPN排行推荐 | 9月6日22.4M/S|免费Clash/SSR/Shadowrocket/V2ray免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-29-node-share.htm" title="免费VPN排行推荐 | 8月29日20.2M/S|免费Shadowrocket/Clash/V2ray/SSR免费节点订阅分享">免费VPN排行推荐 | 8月29日20.2M/S|免费Shadowrocket/Clash/V2ray/SSR免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-11-vpn-github.htm" title="VPN推荐 | 8月11日22.5M/S|免费Shadowrocket/Clash/V2ray/SSR免费节点地址">VPN推荐 | 8月11日22.5M/S|免费Shadowrocket/Clash/V2ray/SSR免费节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-7-free-vpn.htm" title="VPN推荐 | 8月7日21.4M/S|免费SSR/Clash/V2ray/Shadowrocket免费节点地址">VPN推荐 | 8月7日21.4M/S|免费SSR/Clash/V2ray/Shadowrocket免费节点地址</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-9-3-mianfei-vpn.htm" title="免费VPN排行推荐 | 9月3日20M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点订阅分享">免费VPN排行推荐 | 9月3日20M/S|免费Shadowrocket/V2ray/SSR/Clash免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-9-10-node-share.htm" title="免费VPN排行推荐 | 9月10日18.2M/S|免费SSR/Shadowrocket/Clash/V2ray免费节点订阅分享">免费VPN排行推荐 | 9月10日18.2M/S|免费SSR/Shadowrocket/Clash/V2ray免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-9-5-vpn-proxy.htm" title="免费VPN排行推荐 | 9月5日19.7M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享">免费VPN排行推荐 | 9月5日19.7M/S|免费V2ray/Shadowrocket/Clash/SSR免费节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-8-22-mianfei-vpn.htm" title="免费VPN排行推荐 | 8月22日21.8M/S|免费Clash/V2ray/SSR/Shadowrocket免费节点订阅分享">免费VPN排行推荐 | 8月22日21.8M/S|免费Clash/V2ray/SSR/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-27-top-vpn-node.htm" title="免费VPN排行推荐 | 8月27日19.5M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket免费节点订阅分享">免费VPN排行推荐 | 8月27日19.5M/S|免费SSR/V2ray节点/Clash节点/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-12-free-node-subscribe-links.htm" title="免费VPN排行推荐 | 9月12日20M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR免费节点订阅分享">免费VPN排行推荐 | 9月12日20M/S|免费Shadowrocket节点/V2ray节点/Clash节点/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-1-top-vpn.htm" title="免费VPN排行推荐 | 9月1日20.9M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket免费节点订阅分享">免费VPN排行推荐 | 9月1日20.9M/S|免费V2ray节点/Clash节点/SSR/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-29-node-share.htm" title="免费VPN排行推荐 | 8月29日20.2M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR免费节点订阅分享">免费VPN排行推荐 | 8月29日20.2M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-8-vpn-free.htm" title="VPN推荐 | 8月8日19.1M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR免费节点地址">VPN推荐 | 8月8日19.1M/S|免费V2ray节点/Clash节点/Shadowrocket节点/SSR免费节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-14-free-vpn-node.htm" title="免费VPN排行推荐 | 9月14日21.5M/S|免费Clash节点/SSR/V2ray节点/Shadowrocket免费节点订阅分享">免费VPN排行推荐 | 9月14日21.5M/S|免费Clash节点/SSR/V2ray节点/Shadowrocket免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-8-5-vpn-proxy.htm" title="VPN推荐 | 8月5日21.7M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR免费节点地址">VPN推荐 | 8月5日21.7M/S|免费Shadowrocket节点/Clash节点/V2ray节点/SSR免费节点地址</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-13-share-vpn.htm" title="免费VPN排行推荐 | 9月13日19.2M/S|免费SSR/Clash节点/Shadowrocket节点/V2ray免费节点订阅分享">免费VPN排行推荐 | 9月13日19.2M/S|免费SSR/Clash节点/Shadowrocket节点/V2ray免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-10-node-share.htm" title="免费VPN排行推荐 | 9月10日18.2M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray免费节点订阅分享">免费VPN排行推荐 | 9月10日18.2M/S|免费SSR/Shadowrocket节点/Clash节点/V2ray免费节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-9-22-free-node-subscribe-links.htm" title="免费VPN排行推荐 | 9月22日22.3M/S|免费Shadowrocket节点/SSR/Clash节点/V2ray免费节点订阅分享">免费VPN排行推荐 | 9月22日22.3M/S|免费Shadowrocket节点/SSR/Clash节点/V2ray免费节点订阅分享</a></li>
                     </ul>
     </div>
 </div>
@@ -239,7 +239,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
+                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2025-09/" title="2025-09 归档">2025-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">28</span> <a href="/date/2025-08/" title="2025-08 归档">2025-08</a></h4>
@@ -259,7 +259,8 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
             <div class="row">
                 <div class="col-md-12 footer_style_1">
                     <div class="copy-right-text text-center">
-                                            <p>
+                                            <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
                                                 <a href="/">首页</a> |
                                                 <a href="/free-nodes/">免费节点</a> |
                                                 <a href="/paid-subscribe/">推荐机场</a> |
@@ -270,7 +271,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                        <p>
+                                            <p>
                             免费VPN排行推荐 订阅机场节点中文网 版权所有
                             <br />
                             Powered by WordPress
