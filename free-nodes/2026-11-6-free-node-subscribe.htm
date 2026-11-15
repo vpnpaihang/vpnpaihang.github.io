@@ -327,31 +327,6 @@ A5：不同国家和地区政策不同，用户应了解当地法律法规，合
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 是什么项目？</h5></div>
-    <div class="panel-body">
-        Mihomo 是 Clash Meta 的继任版本，也被称为 Clash.Meta 的社区分支。它优化了性能，支持更多协议如 Hysteria2、TUIC 等，同时提供更灵活的规则匹配系统，是目前非常流行的分流代理核心。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点排序功能如何提升访问效率？</h5></div>
-    <div class="panel-body">
-        Matsuri 会定期测速节点延迟，并结合策略组自动选择延迟低、稳定性高的节点处理不同流量。提升网页浏览、视频播放和游戏访问速度，减少掉线和卡顿。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的传输协议选择对性能有何影响？</h5></div>
-    <div class="panel-body">
-        V2Ray 支持 TCP、WebSocket、gRPC、QUIC 等多种传输协议。不同协议在延迟、抗封锁和吞吐量上差异明显。用户可根据网络环境选择最优协议，以获得稳定且高速的连接体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆插件有什么作用？</h5></div>
-    <div class="panel-body">
-        混淆插件用于伪装流量，使其看起来像普通的 HTTP 或 TLS 请求。常见类型有 plain、tls1.2_ticket_auth 等。合理设置混淆能有效降低被识别的风险，提升连接成功率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的 TAP 模式与 TUN 模式区别是什么？</h5></div>
-    <div class="panel-body">
-        TAP 模式模拟以太网接口，适合游戏流量代理；TUN 模式则模拟 IP 层接口，更适合全局代理。根据用途不同可自由选择，但需管理员权限运行。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 为什么在 iOS 上广受欢迎？</h5></div>
     <div class="panel-body">
         Potatso Lite 是一款操作简洁的代理工具，支持多种代理协议和自定义规则。它适合不需要复杂配置的用户，界面友好、性能稳定，非常适合日常轻量使用和应用代理。<hr />    </div>
@@ -362,9 +337,29 @@ A5：不同国家和地区政策不同，用户应了解当地法律法规，合
         通过混淆插件可以模拟正常 HTTPS 或 HTTP 流量，隐藏真实通信特征。合理选择混淆方式，可有效避免 DPI 检测，提高节点可用性和连接稳定性，保证长期科学上网。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 的 TAP 模式与 TUN 模式区别是什么？</h5></div>
+    <div class="panel-body">
+        TAP 模式模拟以太网接口，适合游戏流量代理；TUN 模式则模拟 IP 层接口，更适合全局代理。根据用途不同可自由选择，但需管理员权限运行。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统代理有何区别？</h5></div>
     <div class="panel-body">
         TUN 模式拦截系统 IP 层流量，实现全局代理，而系统代理通常只影响支持代理的应用。TUN 更适合游戏、视频和全局科学上网场景，保证所有流量通过节点，提高稳定性和速度。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 如何通过命令行管理配置？</h5></div>
+    <div class="panel-body">
+        Clash 内置命令行接口，可用于启动、停止、切换配置或查看日志。通过命令行运行 `clash -f config.yaml` 可加载指定配置文件，适合服务器或无人值守场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的混淆插件有什么作用？</h5></div>
+    <div class="panel-body">
+        混淆插件用于伪装流量，使其看起来像普通的 HTTP 或 TLS 请求。常见类型有 plain、tls1.2_ticket_auth 等。合理设置混淆能有效降低被识别的风险，提升连接成功率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的传输协议选择对性能有何影响？</h5></div>
+    <div class="panel-body">
+        V2Ray 支持 TCP、WebSocket、gRPC、QUIC 等多种传输协议。不同协议在延迟、抗封锁和吞吐量上差异明显。用户可根据网络环境选择最优协议，以获得稳定且高速的连接体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议和混淆组合如何选择最适合的？</h5></div>
@@ -372,9 +367,14 @@ A5：不同国家和地区政策不同，用户应了解当地法律法规，合
         选择模拟 HTTPS 或 HTTP 的混淆方式，再搭配 AEAD 或协议插件，可以隐藏流量特征并提高抗封锁能力。不同网络环境需测试，选择最稳定和可靠的组合。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何通过命令行管理配置？</h5></div>
+    <div class="panel-heading"><h5>Mihomo 是什么项目？</h5></div>
     <div class="panel-body">
-        Clash 内置命令行接口，可用于启动、停止、切换配置或查看日志。通过命令行运行 `clash -f config.yaml` 可加载指定配置文件，适合服务器或无人值守场景。    </div>
+        Mihomo 是 Clash Meta 的继任版本，也被称为 Clash.Meta 的社区分支。它优化了性能，支持更多协议如 Hysteria2、TUIC 等，同时提供更灵活的规则匹配系统，是目前非常流行的分流代理核心。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 节点排序功能如何提升访问效率？</h5></div>
+    <div class="panel-body">
+        Matsuri 会定期测速节点延迟，并结合策略组自动选择延迟低、稳定性高的节点处理不同流量。提升网页浏览、视频播放和游戏访问速度，减少掉线和卡顿。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -422,16 +422,16 @@ A5：不同国家和地区政策不同，用户应了解当地法律法规，合
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/free-nodes/2026-10-30-top-vpn-node.htm" title="免费VPN排行推荐 | 10月30日21.9M/S|免费V2ray节点/Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点免费节点订阅分享">免费VPN排行推荐 | 10月30日21.9M/S|免费V2ray节点/Clash节点/Trojan节点/SSR节点/Singbox节点/Shadowrocket节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-11-7.htm" title="免费VPN排行推荐 | 11月7日20.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点免费节点订阅分享">免费VPN排行推荐 | 11月7日20.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/Singbox节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-11-6-free-node-subscribe.htm" title="免费VPN排行推荐 | 11月6日22.8M/S|免费V2ray节点/Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点免费节点订阅分享">免费VPN排行推荐 | 11月6日22.8M/S|免费V2ray节点/Clash节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点免费节点订阅分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-10-29.htm" title="免费VPN排行推荐 | 10月29日20M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点免费节点订阅分享">免费VPN排行推荐 | 10月29日20M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点/SSR节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-6-vpn-proxy.htm" title="免费VPN排行推荐 | 10月6日20.7M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点免费节点订阅分享">免费VPN排行推荐 | 10月6日20.7M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-8-free-vpn-node.htm" title="免费VPN排行推荐 | 9月8日20.2M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点免费节点订阅分享">免费VPN排行推荐 | 9月8日20.2M/S|免费SSR节点/Clash节点/Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-18-vpn-proxy.htm" title="免费VPN排行推荐 | 9月18日21.9M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点免费节点订阅分享">免费VPN排行推荐 | 9月18日21.9M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-9-13.htm" title="免费VPN排行推荐 | 9月13日20.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点免费节点订阅分享">免费VPN排行推荐 | 9月13日20.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-19.htm" title="免费VPN排行推荐 | 9月19日20.3M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点免费节点订阅分享">免费VPN排行推荐 | 9月19日20.3M/S|免费V2ray节点/Singbox节点/Clash节点/SSR节点/Trojan节点/Shadowrocket节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-25.htm" title="免费VPN排行推荐 | 9月25日20.7M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点免费节点订阅分享">免费VPN排行推荐 | 9月25日20.7M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Trojan节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-10-3.htm" title="免费VPN排行推荐 | 10月3日22.9M/S|免费Trojan节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点免费节点订阅分享">免费VPN排行推荐 | 10月3日22.9M/S|免费Trojan节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点免费节点订阅分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-22-top-vpn-node.htm" title="免费VPN排行推荐 | 10月22日19.2M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点免费节点订阅分享">免费VPN排行推荐 | 10月22日19.2M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Singbox节点/Trojan节点免费节点订阅分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-11-8-free-node-subscribe.htm" title="免费VPN排行推荐 | 11月8日18.9M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点免费节点订阅分享">免费VPN排行推荐 | 11月8日18.9M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-11-15.htm" title="免费VPN排行推荐 | 11月15日22.9M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点免费节点订阅分享">免费VPN排行推荐 | 11月15日22.9M/S|免费V2ray节点/Singbox节点/SSR节点/Shadowrocket节点/Clash节点/Trojan节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-11-3.htm" title="免费VPN排行推荐 | 11月3日19.2M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点免费节点订阅分享">免费VPN排行推荐 | 11月3日19.2M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-11-14-node-share.htm" title="免费VPN排行推荐 | 11月14日21.7M/S|免费Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点免费节点订阅分享">免费VPN排行推荐 | 11月14日21.7M/S|免费Singbox节点/Clash节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-11-9.htm" title="免费VPN排行推荐 | 11月9日20.6M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点免费节点订阅分享">免费VPN排行推荐 | 11月9日20.6M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点免费节点订阅分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-10-25.htm" title="免费VPN排行推荐 | 10月25日21.3M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点免费节点订阅分享">免费VPN排行推荐 | 10月25日21.3M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点免费节点订阅分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -443,13 +443,10 @@ A5：不同国家和地区政策不同，用户应了解当地法律法规，合
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
+                <h4><span class="badge" style="float: right;">15</span> <a href="/date/2026-11/" title="2026-11 归档">2026-11</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">21</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                     </ul>
     </div>
